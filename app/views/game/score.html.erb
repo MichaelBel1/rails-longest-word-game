@@ -1,0 +1,17 @@
+<div class="container">
+  <div>
+    <h1>Score:</h1>
+  </div>
+  <div>
+    <h3> Your word was: <%= @attempt %></h3>
+    <h3>Time Taken to Answer: <%= @results[:time]%>s</h3>
+    <h3>Translation: <%= @translation %></h3>
+    <h3>Your score: <%= @results[:score] %></h3>
+    <h3>Message: <%= @results[:message] %></h3>
+    <%= link_to "Play Again!", game_game_path, class: "btn btn-danger" %>
+  </div>
+
+
+</div>
+
+
